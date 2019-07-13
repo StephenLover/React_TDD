@@ -1,0 +1,27 @@
+{
+  "name": "tdd-react-demo",
+  "version": "1.0.0",
+  "description": "This is demo for tdd react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenLover/React_TDD.git"
+  },
+  "author": "Stephen Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenLover/React_TDD/issues"
+  },
+  "homepage": "https://github.com/StephenLover/React_TDD#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
