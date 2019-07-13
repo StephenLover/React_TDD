@@ -4,8 +4,8 @@
   "description": "This is demo for tdd react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "e2e": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/StephenLover/React_TDD#readme",
   "devDependencies": {
+    "cypress": "^3.4.0",
     "parcel-bundler": "^1.12.3"
   },
   "dependencies": {
