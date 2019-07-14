@@ -1,7 +1,6 @@
 describe('adding a restaurant', () => {
   it('displays the restaurant in the list', () => {
-    const restaurantName = 'Sushi Place';
-
+    const restaurantName = 'Coogee Sushi';
     cy.visit('http://localhost:1234');
 
     cy.get('[data-test="newRestaurantName"]')

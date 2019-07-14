@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { Component } from 'react';
 import {
   Button,
@@ -22,6 +23,7 @@ export default class RestaurantListPage extends Component {
     }));
     // see https://react-materialize.github.io/#/modals "No Trigger"
     // see https://materializecss.com/modals.html "Methods"
+
     $('#addRestaurantModal').modal('close');
   }
 
