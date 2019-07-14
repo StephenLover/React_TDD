@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
     'codingitwrong',
-    "plugin:cypress/recommended"
   ],
   parser: 'babel-eslint',
   plugins: [
@@ -12,6 +11,6 @@ module.exports = {
   env: {
     'browser': true,
     'jest/globals': true,
-    "cypress/globals": true
+    "cypress/globals": true,
   },
 };
