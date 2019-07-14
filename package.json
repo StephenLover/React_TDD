@@ -1,17 +1,23 @@
 {
-  "name": "react-tdd-livestream",
-  "version": "0.1.0",
-  "description": "TDDing a React app on live stream",
+  "name": "tdd-react-demo",
+  "version": "1.0.0",
+  "description": "This is demo for tdd react",
   "main": "index.js",
-  "repository": "git@github.com:CodingItWrong/react-tdd-livestream.git",
-  "author": "Josh Justice <me@codingitwrong.com>",
-  "license": "Apache-2.0",
   "scripts": {
     "start": "parcel index.html",
-    "lint": "eslint cypress/integration/**/*.js src/**/*.js test/**/*.js",
     "unit": "jest test/**/*.spec.js",
     "e2e": "cypress open"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenLover/React_TDD.git"
+  },
+  "author": "Stephen Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenLover/React_TDD/issues"
+  },
+  "homepage": "https://github.com/StephenLover/React_TDD#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
