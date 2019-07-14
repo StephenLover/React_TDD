@@ -1,19 +1,18 @@
 describe('adding a restaurant', () => {
-
   it('displays the restaurant in the list', () => {
-    const newLocal = cy.visit('http://localhost:1234');
-    const restaurantName = 'Sushi Place';
+    const restaurantName = 'Coogee Sushi';
 
+    cy.visit('http://localhost:1234');
 
-    newLocal.get('[data-test="addRestaurantButton"]')
+    cy.get('[data-test="addRestaurantButton"]')
       .click();
 
-    newLocal.get('[data-test="newRestaurantName"]')
+    cy.get('[data-test="newRestaurantName"]')
       .type(restaurantName);
 
-    newLocal.get('[data-test="saveNewRestaurantButton"]')
+    cy.get('[data-test="saveNewRestaurantButton"]')
       .click();
 
-    newLocal.contains(restaurantName);
+    cy.contains(restaurantName);
   });
 });
