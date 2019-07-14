@@ -51530,6 +51530,7 @@ function (_Component) {
       var restaurantNames = this.state.restaurantNames;
       return _react.default.createElement("div", null, _react.default.createElement(_reactMaterialize.Modal, {
         id: "addRestaurantModal",
+        "data-test": "addRestaurantModal",
         header: "New Restaurant",
         trigger: _react.default.createElement(_reactMaterialize.Button, {
           "data-test": "addRestaurantButton"
@@ -51648,7 +51649,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50318" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50530" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

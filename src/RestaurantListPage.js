@@ -33,6 +33,7 @@ export default class RestaurantListPage extends Component {
       <div>
         <Modal
           id="addRestaurantModal"
+          data-test="addRestaurantModal"
           header="New Restaurant"
           trigger={
             <Button
