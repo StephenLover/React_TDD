@@ -28,3 +28,4 @@ jobs:
           command: chmod +x bin/cypress
       - run: bin/cypress
       - run: yarn unit
+      - run: yarn lint
