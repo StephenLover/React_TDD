@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  mount,
-} from 'enzyme';
+import { mount } from 'enzyme';
 import NewRestaurantForm from '../../src/NewRestaurantForm';
 
 describe('NewRestaurantForm', () => {
@@ -9,25 +7,17 @@ describe('NewRestaurantForm', () => {
     it('calls the onSave handler', () => {
       const saveHandler = jest.fn();
 
-      const wrapper = mount(< NewRestaurantForm onSave = {
-        saveHandler
-      }
-      />);
+      const wrapper = mount(<NewRestaurantForm onSave={saveHandler} />);
 
       wrapper
-        .find('[data-test="newRestaurantName"]')
-        .simulate('change', {
-          target: {
-            value: 'ChinaTown HotPot',
-          },
-        });
+        .find('input[data-test="newRestaurantName"]')
+        .simulate('change', { target: { value: 'Sushi Place' } });
 
       wrapper
-        .find('[data-test="saveNewRestaurantButton"]')
+        .find('button[data-test="saveNewRestaurantButton"]')
         .simulate('click');
 
-      expect(saveHandler)
-        .toHaveBeenCalledWith('ChinaTown HotPot');
+      expect(saveHandler).toHaveBeenCalledWith('Sushi Place');
     });
   });
 });

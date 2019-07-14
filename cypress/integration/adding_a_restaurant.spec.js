@@ -1,11 +1,11 @@
 describe('adding a restaurant', () => {
   it('displays the restaurant in the list', () => {
-    const restaurantName = 'Coogee Sushi';
+    const restaurantName = 'Sushi Place';
 
     cy.visit('http://localhost:1234');
 
     cy.get('[data-test="newRestaurantName"]')
-      .should('not.exist');
+      .should('not.be.visible');
 
     cy.get('[data-test="addRestaurantButton"]')
       .click();
@@ -17,7 +17,7 @@ describe('adding a restaurant', () => {
       .click();
 
     cy.get('[data-test="newRestaurantName"]')
-      .should('not.exist');
+      .should('not.be.visible');
 
     cy.contains(restaurantName);
   });
