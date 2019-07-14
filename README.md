@@ -1,8 +1,8 @@
 # React_TDD
 
-##This project is a simple demo for practicing React TDD programming philosophy.
+## This project is a simple demo for practicing React TDD programming philosophy.
 
-###What I did in this project:
+### What I did in this project:
 
 #### Environment setup:
 ##### -Parcel Setting up
