@@ -27,3 +27,4 @@ jobs:
           name: chmod permissions
           command: chmod +x bin/cypress
       - run: bin/cypress
+      - run: yarn unit
